@@ -290,32 +290,55 @@ console.log(objArr)
        and non-primitive data type means that stroes multiple values like object and array.
       </p>
     </div>
-<!-------- example -------->
-    <div class="card example1-card">
-      <h2>💡 Example</h2>
-      <pre><code>
-       
 
-            </code></pre>
-    </div>
 <!------- question 6 completed ----- -->
  <!----------------------------------- Question No 7 ---------------------->
     <div class="card question-card">
       <h2> Question 7❓ </h2>
-      <p>Q:  </p>
+      <p>Q: What is Generic type?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
-      </p>
+       The one property of object that we donot know what type is coming, when we use Generic.<br> 
+       after name of interface we keep <pre><></pre> and inside <pre><></pre>
+we write 'Type' when in object when we write interface name than we describe type like <pre>User<string></string></pre>      </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+       <xmp>
+        interface User<Type> {
+    name : string,
+    email : string,
+    data : Type
+}
+const User_1 : User<string> = {
+    name : 'Ahmed',
+    email: 'xyz',
+    data : 'testing'
+}
+console.log(User_1)
+____________________________________________________________
+Example two with array
+
+
+// generic type 
+interface User<Type> {
+    name : string,
+    email : string,
+    data : Type
+}
+const User_2 : User<string[]> = {
+    name : 'Ahmed',
+    email: 'xyz',
+    data : ['a','b','c']
+}
+console.log(User_2)
+       </xmp>
+
 
             </code></pre>
     </div>
@@ -323,13 +346,13 @@ console.log(objArr)
  <!----------------------------------- Question No 8 ---------------------->
     <div class="card question-card">
       <h2> Question 8❓ </h2>
-      <p>Q:  </p>
+      <p>Q: Type extends object?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       see in example:
       </p>
     </div>
 <!-------- example -------->
@@ -337,27 +360,62 @@ console.log(objArr)
       <h2>💡 Example</h2>
       <pre><code>
        
+<xmp>
+  interface Company<Type extends object> {
+    comName : string,
+    multipleLocations : boolean,
+    departments : Type
+    
+}
+const company_1  : Company<{mobileDep : boolean,sap : boolean}> = {
+    comName : 'Abccompany',
+    multipleLocations : true,
+    departments : { mobileDep : true,
+        sap : false
+    }
+    
 
+}
+console.log(company_1)
+</xmp>
             </code></pre>
     </div>
 <!------- question 8 completed ----- -->
  <!----------------------------------- Question No 9 ---------------------->
     <div class="card question-card">
       <h2> Question 9❓ </h2>
-      <p>Q:  </p>
+      <p>Q: One propery must in type extends object?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       see in example:
       </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+       <xmp>
+        interface Company<Type extends{hrDep : boolean}> {
+    comName : string,
+    multipleLocations : boolean,
+    departments : Type
+    
+}
+const company_1  : Company<{mobileDep : boolean,sap : boolean,hrDep : boolean}> = {
+    comName : 'Abccompany',
+    multipleLocations : true,
+    departments : { mobileDep : true,
+        sap : false,
+        hrDep : true
+    }
+    
+
+}
+console.log(company_1)
+       </xmp>
 
             </code></pre>
     </div>
@@ -365,20 +423,39 @@ console.log(objArr)
  <!----------------------------------- Question No 10 ---------------------->
     <div class="card question-card">
       <h2> Question 10❓ </h2>
-      <p>Q:  </p>
+      <p>Q: Enum in Typescript?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       we define data type that is coming,except our defined data type we can not get another data type.
       </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+       <xmp>
+        enum  orderStatus {
+   
+    pending = 'pending',
+    cancelled = 'cancelled',
+    delivered = 'delivered'
+}
+const order :{orderId : string, orderStatus :string
+}[]=
+[{
+    orderId :'abc123',
+    orderStatus : orderStatus.pending
+},
+{orderId :'xyz123',
+    orderStatus : orderStatus.delivered},
+{orderId :'mno789',
+    orderStatus : orderStatus.cancelled}]
+
+    console.log(order)
+       </xmp>
 
             </code></pre>
     </div>
@@ -386,20 +463,28 @@ console.log(objArr)
  <!----------------------------------- Question No 12 ---------------------->
     <div class="card question-card">
       <h2> Question 12❓ </h2>
-      <p>Q:  </p>
+      <p>Q: what is void function ?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       void function is such function that nothing return us but we can only console or any task inside it but it 
+       does not return us nothing.
       </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+       <xmp>
+        function functionTesting(): void {
+     const a = 'c';
+    console.log(a)
+   
+}
+functionTesting();
+       </xmp>
 
             </code></pre>
     </div>
@@ -407,13 +492,13 @@ console.log(objArr)
  <!----------------------------------- Question No 13 ---------------------->
     <div class="card question-card">
       <h2> Question 13❓ </h2>
-      <p>Q:  </p>
+      <p>Q: void string or number function? </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+        in this function we tell after : string or number and it function only return number or string.
       </p>
     </div>
 <!-------- example -------->
@@ -421,7 +506,21 @@ console.log(objArr)
       <h2>💡 Example</h2>
       <pre><code>
        
+<xmp>
+  function functionString():string{
+    return('hello')
 
+}
+let ans = functionString();
+console.log(ans)
+____________________________________________________________
+function functionString():number{
+    return(9)
+
+}
+let ans = functionString();
+console.log(ans)
+</xmp>
             </code></pre>
     </div>
 <!------- question 13 completed ----- -->
