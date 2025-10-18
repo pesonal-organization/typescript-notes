@@ -527,20 +527,31 @@ console.log(ans)
  <!----------------------------------- Question No 14 ---------------------->
     <div class="card question-card">
       <h2> Question 14❓ </h2>
-      <p>Q:  </p>
+      <p>Q: Type instead of interface ? </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       see in example;
       </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+       <xmp>
+        type User = { name : string,
+    age : number,
+    title : string
+}
+const user : User ={
+    name : 'Aziz',
+    age : 30,
+    title : 'SE'
+}
+console.log(user)
+       </xmp>
 
             </code></pre>
     </div>
@@ -548,20 +559,53 @@ console.log(ans)
  <!----------------------------------- Question No 15 ---------------------->
     <div class="card question-card">
       <h2> Question 15❓ </h2>
-      <p>Q:  </p>
+      <p>Q: Difference between interface and type?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       we can use same name interface multiple times but we can not use type same name multiple time.<br> 
+       when we use type we give = after type name but in interface donot give any thing after interface name 
+       and before { }.
       </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+       <xmp>
+        interface
+
+        interface User {
+
+    name : string
+}
+interface User {
+    age : number
+}
+const user : User = {
+    name : 'Aziz',
+    age : 22
+}
+console.log(user)
+____________________________________________________________
+type 
+
+type User = {
+    name : string
+}
+type User = {
+    age : number
+}
+
+const user_1 : User = {
+    name :'Aziz',
+    age : 24
+}
+console.log(user_1)
+
+       </xmp>
 
             </code></pre>
     </div>
