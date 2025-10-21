@@ -614,20 +614,30 @@ console.log(user_1)
  <!----------------------------------- Question No 15 ---------------------->
     <div class="card question-card">
       <h2> Question 15❓ </h2>
-      <p>Q:  </p>
+      <p>Q: type union in typescript? </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       we write type and give it name like Id and save more than one types like string or number <br> 
+       now we can make a variable and it variabe can have number or string because we have described two type by using pipe(|) symbol .
       </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+        <xmp>
+          type Id = string | number;
+        const data : Id = 324;
+        console.log(data)
+
+
+        type Value = string | number[];
+        const data1 : Value = [2,3,4]
+        console.log(data1)
+        </xmp>
 
             </code></pre>
     </div>
@@ -635,20 +645,32 @@ console.log(user_1)
  <!----------------------------------- Question No 16 ---------------------->
     <div class="card question-card">
       <h2> Question 16❓ </h2>
-      <p>Q:  </p>
+      <p>Q: type literal in typescript?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+  we define values in type literal and ourdefined values are accepted not another .
       </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+       <xmp>
+        type Id = 'ab'| 32;
+        const data :Id = 32
+        console.log(data) 
+
+        type Value = 'hello' | 32 | true 
+        const data = 32 ;
+        console.log(data)
+
+         type Value = 'ab' | 2 | boolean;
+       const data : Value = true;
+       console.log(data)
+       </xmp>
 
             </code></pre>
     </div>
@@ -656,20 +678,21 @@ console.log(user_1)
  <!----------------------------------- Question No 17 ---------------------->
     <div class="card question-card">
       <h2> Question 17❓ </h2>
-      <p>Q:  </p>
+      <p>Q: type any in typescript?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       we can give any type in type any.
       </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+       <xmp>const data : any = ['a','b',2,4,5];
+    console.log(data)</xmp>
 
             </code></pre>
     </div>
