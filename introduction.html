@@ -60,13 +60,17 @@
        Turns into normal JavaScript so browser can read and run it.
 
     <br> 
-    Run type script 
-    <br>
-    <pre>
-        server run 
-        tsc app.ts 
-        node app.js
-    </pre>
+    <pre>Running of type script<br> 
+    first we create one file app.js <br> 
+    than we create another file app.ts <br> 
+    Now we write code for example const name : string = 'Aziz' <br> 
+    and console.log(name)<br> 
+    now we open terminal <br> 
+    and first we run server by typing <br>
+    tsc app.ts <br> 
+    after running server we type <br>
+    node app.js</pre>
+    
       </p>
     </div>
 
@@ -74,7 +78,7 @@
  <!----------------------------------- Question No 2 ---------------------->
     <div class="card question-card">
       <h2> Question 2❓ </h2>
-      <p>Q: temperary and permanent solution?  </p>
+      <p>Q: temporary and permanent solution?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
@@ -716,25 +720,241 @@ console.log(user_1)
  <!----------------------------------- Question No 18 ---------------------->
     <div class="card question-card">
       <h2> Question 18❓ </h2>
-      <p>Q:  </p>
+      <p>Q: Example of defining string,number and boolean data types?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       see in example section
       </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+       <xmp>
+        // string
+const place : string = 'karachi';
+console.log(place);
+
+// number
+const number : number = 233;
+console.log(number);
+
+// boolean 
+const isEligible : boolean = true;
+console.log(isEligible)
+       </xmp>
 
             </code></pre>
     </div>
 <!------- question completed ----- -->
  <!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q: concatenation of two strings by using typescript?  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       see in example:
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       <xmp>
+        // concatenation two string by typescript
+
+const fName : string = 'Shahzada';
+const lastName : string = 'Ahmed';
+const fullName : string = fName + ' ' + lastName;
+console.log(fullName)
+
+       </xmp>
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+ <!----------------------------------- Question No 20 ---------------------->
+    <div class="card question-card">
+      <h2> Question 20❓ </h2>
+      <p>Q: Defining array type in typescript?  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       after array name we define type string/number and write [ ].
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       <xmp>
+        const fruits : string[] = ['apple','mango','banaa'];
+console.log(fruits);
+
+
+// number array
+const num : number[] = [2,4,5,6];
+console.log(num)
+       </xmp>
+
+            </code></pre>
+    </div>
+<!------- question 20 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 21❓ </h2>
+      <p>Q: Define type of for loop? </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       we define for loop type in initialization.<br> 
+       when we are running for loop in a list , than we define type only list not in for loop, see in example two
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       <xmp>
+        for(let i :number = 1; i <=10;i++)
+{
+    console.log(i)
+}
+
+<!-- example two -->
+
+const fruits : string[] = ['apple','mango','banana','grapes'];
+for(let i = 0 ;i < fruits.length;i++){
+    console.log(fruits[i])
+}
+
+       </xmp>
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 22❓ </h2>
+      <p>Q: Defining of type in function?  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       we define data type in parameter of function, see in example:
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       <xmp>
+        function greeting(city : string){
+    console.log(`welcome to ${city}`)
+
+}
+greeting('Lahore')
+
+<!-- example two -->
+ function details(name : string, 
+    age : number,
+     course : string
+     ){
+console.log(`My name is ${name}, I am ${age} years old and i am learing ${course}.`)
+}
+details('Aziz',30,'web development')
+       </xmp>
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 23❓ </h2>
+      <p>Q: what is interface and how do we define object data type?  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       when we create an object first we define its type<br> 
+       interface is a keyword and we define object type by using interface.<br> 
+       first we write interface and than interface name like UserType , we write initial capital of interface name but small also work<br>
+       <br> see detail in exmaple:
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       <xmp>
+        <!-- interface -->
+        interface UserType {
+    name : string,
+    age : number,
+    isEligible : boolean
+}
+
+<!-- object -->
+const user : UserType = {
+    name :'Abid',
+    age : 32,
+    isEligible : true
+}
+console.log(user)
+       </xmp>
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 24❓ </h2>
+      <p>Q: Use of optional chaining in interface?  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       we can use optional chaining in interface, the property in which we use optional chaining ?: if we describe in 
+       object , good and if we not describe than also no error is shown.
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       <xmp>
+        // interface using optional chaining
+interface usertype {
+    name : string,
+    age : number,
+    isEligible ?: boolean
+}
+// object
+const user : usertype = {
+    name :'Abid',
+    age : 32,
+    
+}
+console.log(user)
+       </xmp>
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
     <div class="card question-card">
       <h2> Question 19❓ </h2>
       <p>Q:  </p>
@@ -755,9 +975,9 @@ console.log(user_1)
             </code></pre>
     </div>
 <!------- question 19 completed ----- -->
- <!----------------------------------- Question No 20 ---------------------->
+<!----------------------------------- Question No 19 ---------------------->
     <div class="card question-card">
-      <h2> Question 20❓ </h2>
+      <h2> Question 19❓ </h2>
       <p>Q:  </p>
     </div>
   <!----- answers ----->
@@ -775,7 +995,217 @@ console.log(user_1)
 
             </code></pre>
     </div>
-<!------- question 20 completed ----- -->
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q:  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q:  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q:  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q:  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q:  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q:  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q:  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q:  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q:  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
+<!----------------------------------- Question No 19 ---------------------->
+    <div class="card question-card">
+      <h2> Question 19❓ </h2>
+      <p>Q:  </p>
+    </div>
+  <!----- answers ----->
+    <div class="card answer-card">
+      <h2>✅ Answer</h2>
+      <p>
+       
+      </p>
+    </div>
+<!-------- example -------->
+    <div class="card example1-card">
+      <h2>💡 Example</h2>
+      <pre><code>
+       
+
+            </code></pre>
+    </div>
+<!------- question 19 completed ----- -->
 
     
 
