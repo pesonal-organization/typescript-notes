@@ -956,35 +956,53 @@ console.log(user)
 <!------- question 19 completed ----- -->
 <!----------------------------------- Question No 19 ---------------------->
     <div class="card question-card">
-      <h2> Question 19❓ </h2>
-      <p>Q:  </p>
+      <h2> Question 25❓ </h2>
+      <p>Q: Create an array of object?  </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       see in example:
       </p>
     </div>
 <!-------- example -------->
     <div class="card example1-card">
       <h2>💡 Example</h2>
       <pre><code>
-       
+       <xmp>
+        interface userType {
+    name : string,
+    age : number
+}
+
+<!-- array of object -->
+const user : userType[]= 
+
+[
+    {name : 'Aziz',
+        age : 30},
+        {name : 'Saleem',
+            age : 22},
+            {name : 'Hakim',
+                age : 23}
+]
+console.log(user)
+       </xmp>
 
             </code></pre>
     </div>
 <!------- question 19 completed ----- -->
 <!----------------------------------- Question No 19 ---------------------->
     <div class="card question-card">
-      <h2> Question 19❓ </h2>
-      <p>Q:  </p>
+      <h2> Question 26❓ </h2>
+      <p>Q: same name multiple interface? </p>
     </div>
   <!----- answers ----->
     <div class="card answer-card">
       <h2>✅ Answer</h2>
       <p>
-       
+       we can multiple interface of same name, see in example
       </p>
     </div>
 <!-------- example -------->
@@ -992,7 +1010,30 @@ console.log(user)
       <h2>💡 Example</h2>
       <pre><code>
        
+<xmp>
+  // interfaceOne
+interface UserType {
+    name : string
+}
+// interfaceTwo
+interface UserType {
+   age : number
+}
+// interfaceThree
+interface UserType {
+    email : string
+}
 
+// object
+const user : UserType =
+{
+    name : 'Aziz',
+    age : 22,
+    email : 'aziz@gmail.com'
+}
+
+console.log(user)
+</xmp>
             </code></pre>
     </div>
 <!------- question 19 completed ----- -->
